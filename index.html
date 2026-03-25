@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thiburee Cleaning Services | Professional Cleaning Company South Africa</title>
+    <title>ThibuRee Cleaning | Professional Cleaning Services South Africa</title>
     <style>
         * {
             margin: 0;
@@ -25,6 +25,7 @@
             width: 100%;
             top: 0;
             z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
         nav {
@@ -36,13 +37,38 @@
             padding: 0 2rem;
         }
         
+        /* Logo Styles */
         .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
         
-        .logo span {
-            color: #3498db;
+        .logo-img {
+            height: 50px;
+            width: auto;
+            border-radius: 8px;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-text .company-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        
+        .logo-text .company-name span {
+            color: #4caf50;
+        }
+        
+        .logo-text .tagline {
+            font-size: 0.7rem;
+            color: #4caf50;
+            letter-spacing: 1px;
         }
         
         .nav-links {
@@ -54,10 +80,12 @@
         .nav-links a {
             color: white;
             text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
         }
         
         .nav-links a:hover {
-            color: #3498db;
+            color: #4caf50;
         }
         
         .hero {
@@ -65,7 +93,7 @@
             color: white;
             text-align: center;
             padding: 8rem 2rem 5rem;
-            margin-top: 60px;
+            margin-top: 70px;
         }
         
         .hero h1 {
@@ -81,15 +109,17 @@
         
         .btn {
             display: inline-block;
-            background: #e67e22;
+            background: #4caf50;
             color: white;
             padding: 0.8rem 2rem;
             text-decoration: none;
             border-radius: 5px;
+            transition: background 0.3s;
+            font-weight: bold;
         }
         
         .btn:hover {
-            background: #d35400;
+            background: #45a049;
         }
         
         .services {
@@ -102,6 +132,7 @@
             text-align: center;
             margin-bottom: 2rem;
             color: #2c3e50;
+            font-size: 2rem;
         }
         
         .service-grid {
@@ -116,11 +147,22 @@
             border-radius: 10px;
             text-align: center;
             border: 1px solid #e0e0e0;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
         
         .service-card h3 {
-            color: #3498db;
+            color: #4caf50;
             margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .service-card p {
+            color: #666;
         }
         
         .compliance {
@@ -132,6 +174,7 @@
         
         .compliance h2 {
             margin-bottom: 1rem;
+            font-size: 2rem;
         }
         
         .compliance ul {
@@ -164,13 +207,28 @@
             .hero p {
                 font-size: 1rem;
             }
+            
+            .logo-img {
+                height: 40px;
+            }
+            
+            .logo-text .company-name {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Thiburee <span>Cleaning</span></div>
+            <div class="logo">
+                <!-- Logo Image - Make sure filename matches what you uploaded -->
+                <img src="logo.jpg" alt="ThibuRee Cleaning Logo" class="logo-img" onerror="this.style.display='none'">
+                <div class="logo-text">
+                    <div class="company-name">ThibuRee <span>Cleaning</span></div>
+                    <div class="tagline">SOLUTION</div>
+                </div>
+            </div>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Services</a></li>
@@ -192,19 +250,19 @@
         <div class="service-grid">
             <div class="service-card">
                 <h3>🏢 Commercial Cleaning</h3>
-                <p>Office buildings, corporate spaces, and retail environments.</p>
+                <p>Office buildings, corporate spaces, and retail environments. Daily, weekly, or customized schedules.</p>
             </div>
             <div class="service-card">
                 <h3>🏭 Industrial Cleaning</h3>
-                <p>Warehouses, factories, and manufacturing facilities.</p>
+                <p>Warehouses, factories, and manufacturing facilities. Deep cleaning and specialized services.</p>
             </div>
             <div class="service-card">
                 <h3>🏥 Medical Facility Hygiene</h3>
-                <p>Hospitals, clinics, and healthcare facilities.</p>
+                <p>Hospitals, clinics, and healthcare facilities. Infection control and specialized protocols.</p>
             </div>
             <div class="service-card">
                 <h3>🧹 Specialized Services</h3>
-                <p>Carpet cleaning, floor maintenance, window cleaning, and sanitization.</p>
+                <p>Carpet cleaning, floor maintenance, window cleaning, and sanitization services.</p>
             </div>
         </div>
     </section>
@@ -220,11 +278,11 @@
             <li>✓ B-BBEE Compliant</li>
             <li>✓ NCCA Registered</li>
         </ul>
-        <p style="margin-top: 1.5rem;">📞 (+27)636608274 | ✉️ info@thibureecleaning.co.za</p>
+        <p style="margin-top: 1.5rem;">📞 +27 (63) 660-8274 | ✉️ info@thibureecleaning.co.za</p>
     </section>
     
     <footer>
-        <p>&copy; 2026 Thiburee Cleaning Services. All rights reserved.</p>
+        <p>&copy; 2026 ThibuRee Cleaning (Pty) Ltd. All rights reserved.</p>
         <p>CSD: MBD1234567 | Tax: 1234567890</p>
     </footer>
 </body>
