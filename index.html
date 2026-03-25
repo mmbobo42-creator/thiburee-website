@@ -1,23 +1,24 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | ThibuRee Cleaning</title>
+    <title>ThibuRee Cleaning | Professional Cleaning Services South Africa</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+       
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
             line-height: 1.6;
             color: #333;
             background: #fff;
         }
-        
+       
         header {
             background: #1a2a3a;
             color: white;
@@ -28,7 +29,7 @@
             z-index: 100;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        
+       
         nav {
             max-width: 1200px;
             margin: 0 auto;
@@ -37,99 +38,199 @@
             align-items: center;
             padding: 0 2rem;
         }
-        
+       
+        /* Logo Styles */
         .logo {
             display: flex;
             align-items: center;
             gap: 12px;
         }
-        
+       
         .logo-img {
             height: 50px;
             width: auto;
             border-radius: 8px;
         }
-        
+       
         .logo-text {
             display: flex;
             flex-direction: column;
         }
-        
+       
         .logo-text .company-name {
             font-size: 1.3rem;
             font-weight: bold;
             letter-spacing: 1px;
         }
-        
+       
         .logo-text .company-name span {
             color: #4caf50;
         }
-        
+       
         .logo-text .tagline {
             font-size: 0.7rem;
             color: #4caf50;
             letter-spacing: 1px;
         }
-        
+       
         .nav-links {
             display: flex;
             list-style: none;
             gap: 2rem;
         }
-        
+       
         .nav-links a {
             color: white;
             text-decoration: none;
             transition: color 0.3s;
             font-weight: 500;
         }
-        
+       
         .nav-links a:hover {
             color: #4caf50;
         }
-        
+       
         .nav-links a.active {
             color: #4caf50;
         }
-        
-        /* About Page Styles */
+       
+        .hero {
+            background: linear-gradient(135deg, #2c3e50, #1a2a3a);
+            color: white;
+            text-align: center;
+            padding: 8rem 2rem 5rem;
+            margin-top: 70px;
+        }
+       
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+       
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+       
+        .btn {
+            display: inline-block;
+            background: #4caf50;
+            color: white;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-weight: bold;
+        }
+       
+        .btn:hover {
+            background: #45a049;
+        }
+       
+        .services {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+       
+        .services h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+            font-size: 2rem;
+        }
+       
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+       
+        .service-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+       
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+       
+        .service-card h3 {
+            color: #4caf50;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+       
+        .service-card p {
+            color: #666;
+        }
+       
+        .compliance {
+            background: #2c3e50;
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+       
+        .compliance h2 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+       
+        .compliance ul {
+            list-style: none;
+            max-width: 500px;
+            margin: 1rem auto;
+        }
+       
+        .compliance li {
+            margin: 0.5rem 0;
+        }
+       
+        /* About Page Styles (integrated from Code 2) */
         .about-container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 8rem 2rem 4rem;
         }
-        
+       
         .about-section {
             margin-bottom: 3rem;
         }
-        
+       
         .about-section h1 {
             font-size: 2.5rem;
             color: #1a2a3a;
             margin-bottom: 1.5rem;
             font-weight: 600;
         }
-        
+       
         .about-section h2 {
             font-size: 1.8rem;
             color: #1a2a3a;
             margin-bottom: 1rem;
             font-weight: 600;
         }
-        
+       
         .about-section h3 {
             font-size: 1.3rem;
             color: #4caf50;
             margin-bottom: 0.75rem;
             font-weight: 600;
         }
-        
+       
         .about-section p {
             color: #555;
             margin-bottom: 1rem;
             line-height: 1.7;
         }
-        
+       
         .highlight-text {
             font-size: 1.1rem;
             color: #1a2a3a;
@@ -138,7 +239,7 @@
             padding-left: 1rem;
             margin: 1.5rem 0;
         }
-        
+       
         /* Two Column Layout */
         .two-column {
             display: grid;
@@ -146,70 +247,70 @@
             gap: 3rem;
             margin: 2rem 0;
         }
-        
+       
         .vision-box, .mission-box {
             background: #f8f9fa;
             padding: 2rem;
             border-radius: 12px;
             border-top: 4px solid #4caf50;
         }
-        
+       
         .vision-box h2, .mission-box h2 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
             color: #1a2a3a;
         }
-        
+       
         .values-list {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
             margin: 2rem 0;
         }
-        
+       
         .value-item {
             background: #f8f9fa;
             padding: 1.5rem;
             border-radius: 10px;
             text-align: center;
         }
-        
+       
         .value-item h4 {
             color: #4caf50;
             font-size: 1.1rem;
             margin-bottom: 0.5rem;
         }
-        
+       
         .value-item p {
             font-size: 0.9rem;
             color: #666;
             margin: 0;
         }
-        
+       
         .compliance-list {
             background: #f0f7f0;
             padding: 2rem;
             border-radius: 12px;
             margin: 2rem 0;
         }
-        
+       
         .compliance-list h3 {
             margin-bottom: 1rem;
         }
-        
+       
         .compliance-list ul {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 0.75rem;
             list-style: none;
         }
-        
+       
         .compliance-list li {
             color: #555;
             position: relative;
             padding-left: 1.5rem;
         }
-        
+       
         .compliance-list li:before {
             content: "✓";
             color: #4caf50;
@@ -217,38 +318,53 @@
             left: 0;
             font-weight: bold;
         }
-        
+       
         footer {
             background: #1a2a3a;
             color: white;
             text-align: center;
             padding: 2rem;
             font-size: 0.9rem;
-            margin-top: 3rem;
         }
-        
+       
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
-            
+           
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+           
+            .hero p {
+                font-size: 1rem;
+            }
+           
+            .logo-img {
+                height: 40px;
+            }
+           
+            .logo-text .company-name {
+                font-size: 1rem;
+            }
+           
             .about-container {
                 padding: 7rem 1.5rem 3rem;
             }
-            
+           
             .two-column {
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
             }
-            
+           
             .values-list {
                 grid-template-columns: 1fr;
             }
-            
+           
             .compliance-list ul {
                 grid-template-columns: 1fr;
             }
-            
+           
             .about-section h1 {
                 font-size: 2rem;
             }
@@ -259,6 +375,7 @@
     <header>
         <nav>
             <div class="logo">
+                <!-- Logo Image - Make sure filename matches what you uploaded -->
                 <img src="1001837177.jpg" alt="ThibuRee Cleaning Logo" class="logo-img" onerror="this.style.display='none'">
                 <div class="logo-text">
                     <div class="company-name">ThibuRee <span>Cleaning</span></div>
@@ -266,84 +383,175 @@
                 </div>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="tenders.html">Tenders</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Tenders</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
-    <div class="about-container">
-        <!-- Who We Are Section -->
-        <div class="about-section">
-            <h1>Who We Are</h1>
-            <p><strong>ThibuRee Cleaning (Pty) Ltd</strong> is a proudly South African, fully registered and compliant cleaning services company dedicated to delivering excellence in every project we undertake. We specialize in commercial cleaning, industrial cleaning, medical facility hygiene, and specialized cleaning services across South Africa.</p>
-            <p>We address critical cleaning and hygiene challenges using professional expertise, modern equipment, and strict legislative compliance. Our commitment to quality ensures that every client receives service that meets the highest industry standards.</p>
-            <div class="highlight-text">
-                As a newly established business, we bring fresh energy, dedication, and a commitment to building lasting relationships with our clients.
-            </div>
-        </div>
-        
-        <!-- Vision and Mission in Two Columns -->
-        <div class="two-column">
-            <div class="vision-box">
-                <h2>Our Vision</h2>
-                <p>To become South Africa's most trusted cleaning services provider, recognized for excellence in compliance, innovation, and customer satisfaction. We aim to set the standard for professional cleaning in the commercial, industrial, and healthcare sectors.</p>
-            </div>
-            <div class="mission-box">
-                <h2>Our Mission</h2>
-                <p>To deliver exceptional, reliable, and compliant cleaning solutions that exceed client expectations. We are committed to creating safe, healthy, and pristine environments for businesses across South Africa through professional service delivery and unwavering dedication to quality.</p>
-            </div>
-        </div>
-        
-        <!-- Our Values Section -->
-        <div class="about-section">
-            <h2>Our Values</h2>
-            <div class="values-list">
-                <div class="value-item">
-                    <h4>Integrity</h4>
-                    <p>We operate with honesty and transparency in all our dealings.</p>
+   
+    <!-- HOME PAGE CONTENT (100% unchanged from your original Code 1) -->
+    <div id="home-page">
+        <section class="hero">
+            <h1>Professional Cleaning Services</h1>
+            <p>Your trusted partner for commercial, industrial, and specialized cleaning in South Africa. Fully compliant and tender-ready.</p>
+            <a href="#" class="btn">Request a Quote</a>
+        </section>
+       
+        <section class="services">
+            <h2>Our Cleaning Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>🏢 Commercial Cleaning</h3>
+                    <p>Office buildings, Corporate spaces, Residential & Domestic Cleaning, Airbnb & Hospitality Cleaning.</p>
                 </div>
-                <div class="value-item">
-                    <h4>Excellence</h4>
-                    <p>We strive for perfection in every service we deliver.</p>
+                <div class="service-card">
+                    <h3>🏭 Industrial Cleaning</h3>
+                    <p>Warehouses, factories, and manufacturing facilities. Deep cleaning and specialized services.</p>
                 </div>
-                <div class="value-item">
-                    <h4>Reliability</h4>
-                    <p>We show up on time and deliver as promised.</p>
+                <div class="service-card">
+                    <h3>🏥 Medical Facility Hygiene</h3>
+                    <p>Hospitals, clinics, and healthcare facilities.</p>
                 </div>
-                <div class="value-item">
-                    <h4>Compliance</h4>
-                    <p>We meet all legal and industry requirements.</p>
+                <div class="service-card">
+                    <h3>🧹 Specialized Services</h3>
+                    <p>Carpet cleaning, Floor maintenance, window cleaning, and Gardening service.</p>
                 </div>
             </div>
-        </div>
-        
-        <!-- Compliance Section -->
-        <div class="compliance-list">
-            <h3>Tender-Ready & Fully Compliant</h3>
-            <p>We are fully registered and compliant for government and corporate tenders in South Africa:</p>
+        </section>
+       
+        <section class="compliance">
+            <h2>✓ Tender-Ready & Fully Compliant</h2>
+            <p>Registered and compliant for government and corporate tenders in South Africa:</p>
             <ul>
-                <li>CIPC Registered Company</li>
-                <li>CSD Registered Supplier</li>
-                <li>SARS Tax Compliant</li>
-                <li>COIDA Letter of Good Standing</li>
-                <li>B-BBEE Compliant</li>
-                <li>NCCA Registered</li>
+                <li>✓ CIPC Registered Company</li>
+                <li>✓ CSD Registered Supplier</li>
+                <li>✓ SARS Tax Compliant</li>
+                <li>✓ COIDA Letter of Good Standing</li>
+                <li>✓ B-BBEE Compliant</li>
+                <li>✓ NCCA Registered</li>
             </ul>
-        </div>
-        
-        <!-- Contact Info -->
-        <div class="about-section" style="text-align: center; margin-top: 2rem;">
-            <p style="font-size: 1.1rem;">📞 +27 (63) 660-8274 | ✉️ info@thibureecleaning.co.za</p>
+            <p style="margin-top: 1.5rem;">📞 +27 (63) 660-8274 | ✉️ info@thibureecleaning.co.za</p>
+        </section>
+    </div>
+   
+    <!-- ABOUT PAGE CONTENT (integrated from your Code 2) -->
+    <div id="about-page" style="display: none;">
+        <div class="about-container">
+            <!-- Who We Are Section -->
+            <div class="about-section">
+                <h1>Who We Are</h1>
+                <p><strong>ThibuRee Cleaning (Pty) Ltd</strong> is a proudly South African, fully registered and compliant cleaning services company dedicated to delivering excellence in every project we undertake. We specialize in commercial cleaning, industrial cleaning, medical facility hygiene, and specialized cleaning services across South Africa.</p>
+                <p>We address critical cleaning and hygiene challenges using professional expertise, modern equipment, and strict legislative compliance. Our commitment to quality ensures that every client receives service that meets the highest industry standards.</p>
+                <div class="highlight-text">
+                    As a newly established business, we bring fresh energy, dedication, and a commitment to building lasting relationships with our clients.
+                </div>
+            </div>
+           
+            <!-- Vision and Mission in Two Columns -->
+            <div class="two-column">
+                <div class="vision-box">
+                    <h2>Our Vision</h2>
+                    <p>To become South Africa's most trusted cleaning services provider, recognized for excellence in compliance, innovation, and customer satisfaction. We aim to set the standard for professional cleaning in the commercial, industrial, and healthcare sectors.</p>
+                </div>
+                <div class="mission-box">
+                    <h2>Our Mission</h2>
+                    <p>To deliver exceptional, reliable, and compliant cleaning solutions that exceed client expectations. We are committed to creating safe, healthy, and pristine environments for businesses across South Africa through professional service delivery and unwavering dedication to quality.</p>
+                </div>
+            </div>
+           
+            <!-- Our Values Section -->
+            <div class="about-section">
+                <h2>Our Values</h2>
+                <div class="values-list">
+                    <div class="value-item">
+                        <h4>Integrity</h4>
+                        <p>We operate with honesty and transparency in all our dealings.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>Excellence</h4>
+                        <p>We strive for perfection in every service we deliver.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>Reliability</h4>
+                        <p>We show up on time and deliver as promised.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>Compliance</h4>
+                        <p>We meet all legal and industry requirements.</p>
+                    </div>
+                </div>
+            </div>
+           
+            <!-- Compliance Section -->
+            <div class="compliance-list">
+                <h3>Tender-Ready & Fully Compliant</h3>
+                <p>We are fully registered and compliant for government and corporate tenders in South Africa:</p>
+                <ul>
+                    <li>CIPC Registered Company</li>
+                    <li>CSD Registered Supplier</li>
+                    <li>SARS Tax Compliant</li>
+                    <li>COIDA Letter of Good Standing</li>
+                    <li>B-BBEE Compliant</li>
+                    <li>NCCA Registered</li>
+                </ul>
+            </div>
+           
+            <!-- Contact Info -->
+            <div class="about-section" style="text-align: center; margin-top: 2rem;">
+                <p style="font-size: 1.1rem;">📞 +27 (63) 660-8274 | ✉️ info@thibureecleaning.co.za</p>
+            </div>
         </div>
     </div>
-    
+   
     <footer>
         <p>&copy; 2026 ThibuRee Cleaning (Pty) Ltd. All rights reserved.</p>
         <p>CSD: MBD1234567 | Tax: 1234567890</p>
     </footer>
+
+    <script>
+        // JavaScript to make the "About" tab load the About content (Code 2) while keeping Home exactly as original
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-links a');
+            const homePage = document.getElementById('home-page');
+            const aboutPage = document.getElementById('about-page');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    const linkText = link.textContent.trim().toLowerCase();
+
+                    // Only handle Home and About (other tabs stay as placeholders for future pages)
+                    if (linkText === 'home' || linkText === 'about') {
+                        e.preventDefault();
+
+                        // Hide both pages first
+                        homePage.style.display = 'none';
+                        aboutPage.style.display = 'none';
+
+                        // Show the selected page
+                        if (linkText === 'home') {
+                            homePage.style.display = 'block';
+                        } else if (linkText === 'about') {
+                            aboutPage.style.display = 'block';
+                        }
+
+                        // Update active tab styling
+                        navLinks.forEach(l => l.classList.remove('active'));
+                        link.classList.add('active');
+                    } else {
+                        // Other links (Services, Tenders, Contact) - prevent jump but do nothing yet
+                        e.preventDefault();
+                    }
+                });
+            });
+
+            // Ensure Home starts active (matches your original Code 1)
+            const homeLink = Array.from(navLinks).find(l => l.textContent.trim().toLowerCase() === 'home');
+            if (homeLink) homeLink.classList.add('active');
+        });
+    </script>
 </body>
 </html>
+```
