@@ -92,22 +92,22 @@
             color: #4caf50;
         }
 
-        /* Page Containers */
+        /* Page Management */
         .page {
             display: none;
-            padding-top: 80px;
         }
        
         .page.active {
             display: block;
         }
 
-        /* Hero */
+        /* Hero - Home only */
         .hero {
             background: linear-gradient(135deg, #2c3e50, #1a2a3a);
             color: white;
             text-align: center;
             padding: 8rem 2rem 5rem;
+            margin-top: 70px;
         }
        
         .hero h1 {
@@ -136,64 +136,131 @@
             background: #45a049;
         }
 
-        /* Services Page - Matching your screenshot */
-        .services-page {
+        /* Original Home Services & Compliance (Unchanged) */
+        .services {
             max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 2rem 6rem;
+            margin: 4rem auto;
+            padding: 0 2rem;
         }
        
-        .services-page h2 {
+        .services h2 {
             text-align: center;
-            margin-bottom: 3rem;
-            color: #1a2a3a;
-            font-size: 2.4rem;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+            font-size: 2rem;
         }
        
         .service-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
         }
        
         .service-card {
             background: #f8f9fa;
-            padding: 2.5rem 2rem;
-            border-radius: 16px;
+            padding: 2rem;
+            border-radius: 10px;
             text-align: center;
             border: 1px solid #e0e0e0;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
        
         .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-        }
-       
-        .service-card .icon {
-            font-size: 2.8rem;
-            margin-bottom: 1rem;
-            display: block;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
        
         .service-card h3 {
+            color: #4caf50;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+       
+        .service-card p {
+            color: #666;
+        }
+       
+        .compliance {
+            background: #2c3e50;
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+       
+        .compliance h2 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+       
+        .compliance ul {
+            list-style: none;
+            max-width: 500px;
+            margin: 1rem auto;
+        }
+       
+        .compliance li {
+            margin: 0.5rem 0;
+        }
+
+        /* New Services Page - Matching the attached picture */
+        .services-page {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 6rem 2rem 5rem;
+        }
+       
+        .services-page h2 {
+            text-align: center;
+            margin-bottom: 3.5rem;
+            color: #1a2a3a;
+            font-size: 2.6rem;
+            font-weight: 600;
+        }
+       
+        .service-grid-new {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+       
+        .service-card-new {
+            background: #f8f9fa;
+            padding: 2.5rem 2rem;
+            border-radius: 16px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+       
+        .service-card-new:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+        }
+       
+        .service-card-new .icon {
+            font-size: 3.2rem;
+            margin-bottom: 1.2rem;
+            display: block;
+        }
+       
+        .service-card-new h3 {
             color: #2e7d32;
-            font-size: 1.45rem;
+            font-size: 1.5rem;
             margin-bottom: 1rem;
             font-weight: 600;
         }
        
-        .service-card p {
+        .service-card-new p {
             color: #555;
-            line-height: 1.6;
+            line-height: 1.65;
+            font-size: 1.02rem;
         }
 
         /* About Page Styles */
         .about-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 5rem 2rem 4rem;
+            padding: 8rem 2rem 4rem;
         }
        
         .about-section {
@@ -204,12 +271,7 @@
             font-size: 2.5rem;
             color: #1a2a3a;
             margin-bottom: 1.5rem;
-        }
-       
-        .about-section h2 {
-            font-size: 1.8rem;
-            color: #1a2a3a;
-            margin-bottom: 1rem;
+            font-weight: 600;
         }
        
         .about-section p {
@@ -274,7 +336,6 @@
             text-align: center;
             padding: 2rem;
             font-size: 0.9rem;
-            margin-top: 3rem;
         }
        
         @media (max-width: 768px) {
@@ -282,13 +343,12 @@
                 display: none;
             }
            
-            .hero h1, .services-page h2, .about-section h1 {
+            .hero h1, .services-page h2 {
                 font-size: 1.9rem;
             }
            
             .two-column {
                 grid-template-columns: 1fr;
-                gap: 1.5rem;
             }
            
             .values-list {
@@ -316,15 +376,15 @@
             </ul>
         </nav>
     </header>
-  
-    <!-- HOME PAGE -->
+ 
+    <!-- HOME PAGE - 100% UNCHANGED as requested -->
     <div id="home-page" class="page active">
         <section class="hero">
             <h1>Professional Cleaning Services</h1>
             <p>Your trusted partner for commercial, industrial, and specialized cleaning in South Africa. Fully compliant and tender-ready.</p>
             <a href="#" class="btn">Request a Quote</a>
         </section>
-      
+     
         <section class="services">
             <h2>Our Cleaning Services</h2>
             <div class="service-grid">
@@ -346,7 +406,7 @@
                 </div>
             </div>
         </section>
-      
+     
         <section class="compliance">
             <h2>✓ Tender-Ready & Fully Compliant</h2>
             <p>Registered and compliant for government and corporate tenders in South Africa:</p>
@@ -361,28 +421,28 @@
             <p style="margin-top: 1.5rem;">📞 +27 (63) 660-8274 | ✉️ info@thibureecleaning.co.za</p>
         </section>
     </div>
-  
-    <!-- SERVICES PAGE (New - Matches your screenshot style) -->
+ 
+    <!-- NEW SERVICES PAGE - Designed to match your picture -->
     <div id="services-page" class="page">
         <div class="services-page">
             <h2>Our Cleaning Services</h2>
-            <div class="service-grid">
-                <div class="service-card">
+            <div class="service-grid-new">
+                <div class="service-card-new">
                     <span class="icon">🏢</span>
                     <h3>Commercial Cleaning</h3>
                     <p>Office buildings, Corporate spaces,<br>Residential & Domestic Cleaning, Airbnb & Hospitality Cleaning.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card-new">
                     <span class="icon">🏭</span>
                     <h3>Industrial Cleaning</h3>
                     <p>Warehouses, factories, and manufacturing facilities.<br>Deep cleaning and specialized services.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card-new">
                     <span class="icon">🏥</span>
                     <h3>Medical Facility Hygiene</h3>
                     <p>Hospitals, clinics, and healthcare facilities.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card-new">
                     <span class="icon">🧹</span>
                     <h3>Specialized Services</h3>
                     <p>Carpet cleaning, Floor maintenance,<br>window cleaning, and Gardening service.</p>
@@ -390,31 +450,70 @@
             </div>
         </div>
     </div>
-  
-    <!-- ABOUT PAGE -->
+ 
+    <!-- ABOUT PAGE (unchanged) -->
     <div id="about-page" class="page">
         <div class="about-container">
             <div class="about-section">
                 <h1>Who We Are</h1>
-                <p><strong>ThibuRee Cleaning (Pty) Ltd</strong> is a proudly South African, fully registered and compliant cleaning services company dedicated to delivering excellence in every project we undertake.</p>
+                <p><strong>ThibuRee Cleaning (Pty) Ltd</strong> is a proudly South African, fully registered and compliant cleaning services company dedicated to delivering excellence in every project we undertake. We specialize in commercial cleaning, industrial cleaning, medical facility hygiene, and specialized cleaning services across South Africa.</p>
                 <div class="highlight-text">
-                    As a growing business, we bring fresh energy, dedication, and a commitment to building lasting relationships with our clients.
+                    As a newly established business, we bring fresh energy, dedication, and a commitment to building lasting relationships with our clients.
                 </div>
             </div>
-          
+         
             <div class="two-column">
                 <div class="vision-box">
                     <h2>Our Vision</h2>
-                    <p>To become a trusted and preferred cleaning services provider in South Africa, known for professionalism, reliability, and continuous improvement.</p>
+                    <p>To become a trusted and preferred cleaning services provider in South Africa, known for professionalism, reliability, and continuous improvement. We aim to grow into a leading service provider across commercial, industrial, and residential sectors while maintaining high standards of service excellence.</p>
                 </div>
                 <div class="mission-box">
                     <h2>Our Mission</h2>
-                    <p>To provide reliable, high-quality, and professional cleaning services that meet and exceed client expectations. ThibuRee PTY LTD is committed to creating clean, safe, and healthy environments.</p>
+                    <p>To provide reliable, high-quality, and professional cleaning services that meet and exceed client expectations. ThibuRee PTY LTD is committed to creating clean, safe, and healthy environments through structured processes, consistent service delivery, and a strong focus on quality and customer satisfaction.</p>
                 </div>
+            </div>
+         
+            <div class="about-section">
+                <h2>Our Values</h2>
+                <div class="values-list">
+                    <div class="value-item">
+                        <h4>Integrity</h4>
+                        <p>We operate with honesty and transparency in all our dealings.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>Excellence</h4>
+                        <p>We strive for perfection in every service we deliver.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>Reliability</h4>
+                        <p>We show up on time and deliver as promised.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>Compliance</h4>
+                        <p>We meet all legal and industry requirements.</p>
+                    </div>
+                </div>
+            </div>
+         
+            <div class="compliance-list">
+                <h3>Tender-Ready & Fully Compliant</h3>
+                <p>We are fully registered and compliant for government and corporate tenders in South Africa:</p>
+                <ul>
+                    <li>CIPC Registered Company</li>
+                    <li>CSD Registered Supplier</li>
+                    <li>SARS Tax Compliant</li>
+                    <li>COIDA Letter of Good Standing</li>
+                    <li>B-BBEE Compliant</li>
+                    <li>NCCA Registered</li>
+                </ul>
+            </div>
+         
+            <div class="about-section" style="text-align: center; margin-top: 2rem;">
+                <p style="font-size: 1.1rem;">📞 +27 (63) 660-8274 | ✉️ info@thibureecleaning.co.za</p>
             </div>
         </div>
     </div>
-  
+ 
     <footer>
         <p>&copy; 2026 ThibuRee Cleaning (Pty) Ltd. All rights reserved.</p>
         <p>CSD: MBD1234567 | Tax: 1234567890</p>
@@ -423,33 +522,43 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const navLinks = document.querySelectorAll('.nav-links a');
-            const pages = {
-                home: document.getElementById('home-page'),
-                services: document.getElementById('services-page'),
-                about: document.getElementById('about-page')
-            };
+            const homePage = document.getElementById('home-page');
+            const servicesPage = document.getElementById('services-page');
+            const aboutPage = document.getElementById('about-page');
 
             navLinks.forEach(link => {
                 link.addEventListener('click', (e) => {
-                    const pageName = link.getAttribute('data-page');
+                    const linkText = link.textContent.trim().toLowerCase();
                     
-                    if (pageName && pages[pageName]) {
+                    if (linkText === 'home' || linkText === 'services' || linkText === 'about') {
                         e.preventDefault();
                         
                         // Hide all pages
-                        Object.values(pages).forEach(page => {
-                            page.classList.remove('active');
-                        });
+                        homePage.style.display = 'none';
+                        servicesPage.style.display = 'none';
+                        aboutPage.style.display = 'none';
                         
                         // Show selected page
-                        pages[pageName].classList.add('active');
+                        if (linkText === 'home') {
+                            homePage.style.display = 'block';
+                        } else if (linkText === 'services') {
+                            servicesPage.style.display = 'block';
+                        } else if (linkText === 'about') {
+                            aboutPage.style.display = 'block';
+                        }
                         
-                        // Update active link
+                        // Update active tab
                         navLinks.forEach(l => l.classList.remove('active'));
                         link.classList.add('active');
+                    } else {
+                        e.preventDefault(); // Other tabs (Tenders, Contact) still inactive
                     }
                 });
             });
+
+            // Set Home as active by default
+            const homeLink = Array.from(navLinks).find(l => l.textContent.trim().toLowerCase() === 'home');
+            if (homeLink) homeLink.classList.add('active');
         });
     </script>
 </body>
