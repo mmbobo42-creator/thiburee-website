@@ -102,7 +102,7 @@
             display: block;
         }
 
-        /* Hero & Original Home Sections */
+        /* Hero & Original Home Sections (unchanged) */
         .hero {
             background: linear-gradient(135deg, #2c3e50, #1a2a3a);
             color: white;
@@ -314,13 +314,6 @@
             color: #4caf50;
             font-size: 1.1rem;
             margin-bottom: 0.5rem;
-        }
-       
-        .compliance-list {
-            background: #f0f7f0;
-            padding: 2rem;
-            border-radius: 12px;
-            margin: 2rem 0;
         }
 
         /* Contact Page */
@@ -541,7 +534,7 @@
         </div>
     </div>
  
-    <!-- ABOUT PAGE -->
+    <!-- ABOUT PAGE - Tender-Ready section removed -->
     <div id="about-page" class="page">
         <div class="about-container">
             <div class="about-section">
@@ -583,19 +576,6 @@
                         <p>We meet all legal and industry requirements.</p>
                     </div>
                 </div>
-            </div>
-         
-            <div class="compliance-list">
-                <h3>Tender-Ready & Fully Compliant</h3>
-                <p>We are fully registered and compliant for government and corporate tenders in South Africa:</p>
-                <ul>
-                    <li>CIPC Registered Company</li>
-                    <li>CSD Registered Supplier</li>
-                    <li>SARS Tax Compliant</li>
-                    <li>COIDA Letter of Good Standing</li>
-                    <li>B-BBEE Compliant</li>
-                    <li>NCCA Registered</li>
-                </ul>
             </div>
          
             <div class="about-section" style="text-align: center; margin-top: 2rem;">
@@ -657,13 +637,9 @@
                     if (pageName && pages[pageName]) {
                         e.preventDefault();
                         
-                        // Hide all pages
                         Object.values(pages).forEach(page => page.classList.remove('active'));
-                        
-                        // Show selected page
                         pages[pageName].classList.add('active');
                         
-                        // Update active link
                         navLinks.forEach(l => l.classList.remove('active'));
                         link.classList.add('active');
                     } else {
