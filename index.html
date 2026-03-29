@@ -10,14 +10,14 @@
             padding: 0;
             box-sizing: border-box;
         }
-       
+      
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
             line-height: 1.6;
             color: #333;
             background: #fff;
         }
-       
+      
         header {
             background: #1a2a3a;
             color: white;
@@ -28,7 +28,7 @@
             z-index: 100;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-       
+      
         nav {
             max-width: 1200px;
             margin: 0 auto;
@@ -37,57 +37,57 @@
             align-items: center;
             padding: 0 2rem;
         }
-       
+      
         .logo {
             display: flex;
             align-items: center;
             gap: 12px;
         }
-       
+      
         .logo-img {
             height: 50px;
             width: auto;
             border-radius: 8px;
         }
-       
+      
         .logo-text {
             display: flex;
             flex-direction: column;
         }
-       
+      
         .logo-text .company-name {
             font-size: 1.3rem;
             font-weight: bold;
             letter-spacing: 1px;
         }
-       
+      
         .logo-text .company-name span {
             color: #4caf50;
         }
-       
+      
         .logo-text .tagline {
             font-size: 0.7rem;
             color: #4caf50;
             letter-spacing: 1px;
         }
-       
+      
         .nav-links {
             display: flex;
             list-style: none;
             gap: 2rem;
         }
-       
+      
         .nav-links a {
             color: white;
             text-decoration: none;
             transition: color 0.3s;
             font-weight: 500;
         }
-       
+      
         .nav-links a:hover {
             color: #4caf50;
         }
-       
+      
         .nav-links a.active {
             color: #4caf50;
         }
@@ -97,12 +97,12 @@
             display: none;
             padding-top: 80px;
         }
-       
+      
         .page.active {
             display: block;
         }
 
-        /* Hero & Original Home Sections (unchanged) */
+        /* Hero */
         .hero {
             background: linear-gradient(135deg, #2c3e50, #1a2a3a);
             color: white;
@@ -110,18 +110,18 @@
             padding: 8rem 2rem 5rem;
             margin-top: 70px;
         }
-       
+      
         .hero h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
         }
-       
+      
         .hero p {
             font-size: 1.2rem;
             max-width: 700px;
             margin: 0 auto 2rem;
         }
-       
+      
         .btn {
             display: inline-block;
             background: #4caf50;
@@ -132,30 +132,31 @@
             transition: background 0.3s;
             font-weight: bold;
         }
-       
+      
         .btn:hover {
             background: #45a049;
         }
 
+        /* Rest of your styles (Services, About, Contact) remain the same */
         .services, .compliance {
             max-width: 1200px;
             margin: 4rem auto;
             padding: 0 2rem;
         }
-       
+      
         .services h2, .compliance h2 {
             text-align: center;
             margin-bottom: 2rem;
             color: #2c3e50;
             font-size: 2rem;
         }
-       
+      
         .service-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
         }
-       
+      
         .service-card {
             background: #f8f9fa;
             padding: 2rem;
@@ -164,46 +165,45 @@
             border: 1px solid #e0e0e0;
             transition: transform 0.3s, box-shadow 0.3s;
         }
-       
+      
         .service-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
-       
+      
         .service-card h3 {
             color: #4caf50;
             margin-bottom: 1rem;
             font-size: 1.3rem;
         }
-       
+      
         .service-card p {
             color: #666;
         }
-       
+      
         .compliance {
             background: #2c3e50;
             color: white;
             padding: 3rem 2rem;
             text-align: center;
         }
-       
+      
         .compliance ul {
             list-style: none;
             max-width: 500px;
             margin: 1rem auto;
         }
-       
+      
         .compliance li {
             margin: 0.5rem 0;
         }
 
-        /* Services Page */
         .services-page {
             max-width: 1200px;
             margin: 0 auto;
             padding: 6rem 2rem 5rem;
         }
-       
+      
         .services-page h2 {
             text-align: center;
             margin-bottom: 3.5rem;
@@ -211,13 +211,13 @@
             font-size: 2.6rem;
             font-weight: 600;
         }
-       
+      
         .service-grid-new {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2rem;
         }
-       
+      
         .service-card-new {
             background: #f8f9fa;
             padding: 2.5rem 2rem;
@@ -226,53 +226,52 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(0,0,0,0.06);
         }
-       
+      
         .service-card-new:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 35px rgba(0,0,0,0.12);
         }
-       
+      
         .service-card-new .icon {
             font-size: 3.2rem;
             margin-bottom: 1.2rem;
         }
-       
+      
         .service-card-new h3 {
             color: #2e7d32;
             font-size: 1.5rem;
             margin-bottom: 1rem;
             font-weight: 600;
         }
-       
+      
         .service-card-new p {
             color: #555;
             line-height: 1.65;
         }
 
-        /* About Page Styles */
         .about-container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 8rem 2rem 4rem;
         }
-       
+      
         .about-section {
             margin-bottom: 3rem;
         }
-       
+      
         .about-section h1 {
             font-size: 2.5rem;
             color: #1a2a3a;
             margin-bottom: 1.5rem;
             font-weight: 600;
         }
-       
+      
         .about-section p {
             color: #555;
             margin-bottom: 1rem;
             line-height: 1.7;
         }
-       
+      
         .highlight-text {
             font-size: 1.1rem;
             color: #1a2a3a;
@@ -281,62 +280,61 @@
             padding-left: 1rem;
             margin: 1.5rem 0;
         }
-       
+      
         .two-column {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 3rem;
             margin: 2rem 0;
         }
-       
+      
         .vision-box, .mission-box {
             background: #f8f9fa;
             padding: 2rem;
             border-radius: 12px;
             border-top: 4px solid #4caf50;
         }
-       
+      
         .values-list {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
             margin: 2rem 0;
         }
-       
+      
         .value-item {
             background: #f8f9fa;
             padding: 1.5rem;
             border-radius: 10px;
             text-align: center;
         }
-       
+      
         .value-item h4 {
             color: #4caf50;
             font-size: 1.1rem;
             margin-bottom: 0.5rem;
         }
 
-        /* Contact Page */
         .contact-page {
             max-width: 1200px;
             margin: 0 auto;
             padding: 6rem 2rem 5rem;
         }
-       
+      
         .contact-page h1 {
             text-align: center;
             font-size: 2.8rem;
             margin-bottom: 1rem;
             color: #1a2a3a;
         }
-       
+      
         .contact-page .subtitle {
             text-align: center;
             color: #666;
             margin-bottom: 4rem;
             font-size: 1.1rem;
         }
-       
+      
         .contact-container {
             display: grid;
             grid-template-columns: 1fr 1.2fr;
@@ -344,41 +342,41 @@
             max-width: 1100px;
             margin: 0 auto;
         }
-       
+      
         .reach-out {
             background: #f8f9fa;
             padding: 2.5rem;
             border-radius: 12px;
             height: fit-content;
         }
-       
+      
         .reach-out h2 {
             font-size: 1.6rem;
             margin-bottom: 1.5rem;
             color: #1a2a3a;
         }
-       
+      
         .reach-out p {
             margin-bottom: 1rem;
             color: #444;
         }
-       
+      
         .reach-out strong {
             color: #1a2a3a;
         }
-       
+      
         .form-section h2 {
             font-size: 1.6rem;
             margin-bottom: 1.5rem;
             color: #1a2a3a;
         }
-       
+      
         .contact-form {
             display: flex;
             flex-direction: column;
             gap: 1.2rem;
         }
-       
+      
         .contact-form input,
         .contact-form textarea {
             padding: 14px 16px;
@@ -387,18 +385,18 @@
             font-size: 1rem;
             transition: border 0.3s;
         }
-       
+      
         .contact-form input:focus,
         .contact-form textarea:focus {
             border-color: #1a73e8;
             outline: none;
         }
-       
+      
         .contact-form textarea {
             min-height: 160px;
             resize: vertical;
         }
-       
+      
         .send-btn {
             background: #1a73e8;
             color: white;
@@ -411,11 +409,11 @@
             transition: background 0.3s;
             align-self: flex-start;
         }
-       
+      
         .send-btn:hover {
             background: #1557b0;
         }
-       
+      
         footer {
             background: #1a2a3a;
             color: white;
@@ -424,17 +422,17 @@
             font-size: 0.9rem;
             margin-top: 4rem;
         }
-       
+      
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
-           
+          
             .contact-container {
                 grid-template-columns: 1fr;
                 gap: 3rem;
             }
-           
+          
             .hero h1, .services-page h2, .contact-page h1 {
                 font-size: 2rem;
             }
@@ -459,15 +457,16 @@
             </ul>
         </nav>
     </header>
- 
-    <!-- HOME PAGE - 100% UNCHANGED -->
+
+    <!-- HOME PAGE -->
     <div id="home-page" class="page active">
         <section class="hero">
             <h1>Professional Cleaning Services</h1>
-            <p>Your trusted partner for commercial, industrial, and specialized cleaning in South Africa. Fully compliant and tender-ready.</p>
-            <a href="#" class="btn">Request a Quote</a>
+            <p>Your trusted partner for commercial, industrial, and specialized cleaning in South Africa. Fully compliant.</p>
+            <!-- "Request a Quote" now links to Contact tab -->
+            <a href="#" id="quote-btn" class="btn">Request a Quote</a>
         </section>
-     
+    
         <section class="services">
             <h2>Our Cleaning Services</h2>
             <div class="service-grid">
@@ -489,7 +488,7 @@
                 </div>
             </div>
         </section>
-     
+    
         <section class="compliance">
             <h2>✓ Tender-Ready & Fully Compliant</h2>
             <p>Registered and compliant for government and corporate tenders in South Africa:</p>
@@ -504,7 +503,7 @@
             <p style="margin-top: 1.5rem;">📞 +27 (63) 660-8274 | ✉️ info@thibureecleaning.co.za</p>
         </section>
     </div>
- 
+
     <!-- SERVICES PAGE -->
     <div id="services-page" class="page">
         <div class="services-page">
@@ -533,8 +532,8 @@
             </div>
         </div>
     </div>
- 
-    <!-- ABOUT PAGE - Tender-Ready section removed -->
+
+    <!-- ABOUT PAGE -->
     <div id="about-page" class="page">
         <div class="about-container">
             <div class="about-section">
@@ -544,7 +543,7 @@
                     As a newly established business, we bring fresh energy, dedication, and a commitment to building lasting relationships with our clients.
                 </div>
             </div>
-         
+        
             <div class="two-column">
                 <div class="vision-box">
                     <h2>Our Vision</h2>
@@ -555,7 +554,7 @@
                     <p>To provide reliable, high-quality, and professional cleaning services that meet and exceed client expectations. ThibuRee PTY LTD is committed to creating clean, safe, and healthy environments through structured processes, consistent service delivery, and a strong focus on quality and customer satisfaction.</p>
                 </div>
             </div>
-         
+        
             <div class="about-section">
                 <h2>Our Values</h2>
                 <div class="values-list">
@@ -577,21 +576,20 @@
                     </div>
                 </div>
             </div>
-         
+        
             <div class="about-section" style="text-align: center; margin-top: 2rem;">
                 <p style="font-size: 1.1rem;">📞 +27 (63) 660-8274 | ✉️ info@thibureecleaning.co.za</p>
             </div>
         </div>
     </div>
- 
+
     <!-- CONTACT PAGE -->
     <div id="contact-page" class="page">
         <div class="contact-page">
             <p class="subtitle">GET IN TOUCH</p>
             <h1>Contact Us</h1>
-           
+          
             <div class="contact-container">
-                <!-- Reach Out -->
                 <div class="reach-out">
                     <h2>Reach Out</h2>
                     <p><strong>Location:</strong> Cape Town, South Africa</p>
@@ -600,8 +598,7 @@
                     <p><strong>Company Reg No:</strong> [Your CIPC Number]</p>
                     <p><strong>B-BBEE Status:</strong> Level 1 (100% Black-Owned) <span style="color:#4caf50;">✔</span></p>
                 </div>
-               
-                <!-- Send a Message -->
+              
                 <div class="form-section">
                     <h2>Send a Message</h2>
                     <form class="contact-form" id="contact-form">
@@ -614,7 +611,7 @@
             </div>
         </div>
     </div>
- 
+
     <footer>
         <p>&copy; 2026 ThibuRee Cleaning (Pty) Ltd. All rights reserved.</p>
         <p>CSD: MBD1234567 | Tax: 1234567890</p>
@@ -630,25 +627,39 @@
                 contact: document.getElementById('contact-page')
             };
 
+            // Navigation between tabs
             navLinks.forEach(link => {
                 link.addEventListener('click', (e) => {
                     const pageName = link.getAttribute('data-page');
-                    
                     if (pageName && pages[pageName]) {
                         e.preventDefault();
-                        
                         Object.values(pages).forEach(page => page.classList.remove('active'));
                         pages[pageName].classList.add('active');
-                        
                         navLinks.forEach(l => l.classList.remove('active'));
                         link.classList.add('active');
-                    } else {
-                        e.preventDefault();
                     }
                 });
             });
 
-            // Form submission alert
+            // "Request a Quote" button → Switch to Contact tab
+            const quoteBtn = document.getElementById('quote-btn');
+            if (quoteBtn) {
+                quoteBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    
+                    // Hide all pages
+                    Object.values(pages).forEach(page => page.classList.remove('active'));
+                    // Show Contact page
+                    pages.contact.classList.add('active');
+                    
+                    // Update active navigation link
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    const contactLink = Array.from(navLinks).find(l => l.getAttribute('data-page') === 'contact');
+                    if (contactLink) contactLink.classList.add('active');
+                });
+            }
+
+            // Contact form submission
             const contactForm = document.getElementById('contact-form');
             if (contactForm) {
                 contactForm.addEventListener('submit', (e) => {
